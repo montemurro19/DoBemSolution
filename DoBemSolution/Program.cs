@@ -1,3 +1,4 @@
+using DoBemSolution.Persistence;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
