@@ -1,9 +1,15 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace DoBemSolution.Models
 {
     public class Aluno
     {
+
+        [Key]
+        public int IdAluno { get; set; }
+
+        [Required]
         public string RegistroAluno { get; set; }
 
         [ForeignKey("Usuario")]

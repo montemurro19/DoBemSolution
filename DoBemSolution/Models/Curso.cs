@@ -4,13 +4,14 @@ namespace DoBemSolution.Models
 {
     public class Curso
     {
-        [Required]
-        public string Nome { get; set; }
-        
+
         [Key]
-        public int Id { get; set; }
+        public int IdCurso { get; set; }
+
+        [Required]
+        public string NomeCurso { get; set; }
         
         [Required]
-        public string CargaHoraria { get; set; }
+        public string CargaHorariaCurso { get; set; }
     }
 }
